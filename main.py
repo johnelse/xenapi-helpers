@@ -25,7 +25,7 @@ def connect(host, username="root", password="xenroot"):
   print "api - an API dispatcher for %s." % host
 
 def usage():
-  print "Usage: %s <hostname> <username> <password>" % sys.argv[0]
+  print "Usage: %s <hostname> [<username> [<password>]]" % sys.argv[0]
 
 if __name__ == "__main__":
   print ""
