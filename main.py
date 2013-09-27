@@ -22,7 +22,7 @@ def connect(host, username="root", password="xenroot"):
   api = session.xenapi
   print "You now have the following objects to play with:"
   print "session - an API session object for %s." % host
-  print "api - an API dispatcher for %s." % host
+  print "api - an API dispatcher for %s (just an alias for session.xenapi)." % host
 
 def usage():
   print "Usage: %s <hostname> [<username> [<password>]]" % sys.argv[0]
