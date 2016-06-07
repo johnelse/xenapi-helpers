@@ -1,5 +1,11 @@
 #!/bin/bash
 
+OLDPATH=$PWD
+
+function finish {
+    cd $OLDPATH
+}
+trap finish EXIT
+
 cd ${0%/*}
 PYTHONPATH=$PWD ipython -i main.py $@
-cd -
